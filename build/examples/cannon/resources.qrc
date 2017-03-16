@@ -1,0 +1,11 @@
+<RCC>
+<qresource prefix="/">
+<file alias="Wall.qml">/home/kai/Bacon2D/examples/cannon/Wall.qml</file>
+<file alias="main.qml">/home/kai/Bacon2D/examples/cannon/main.qml</file>
+<file alias="images/cannon.png">/home/kai/Bacon2D/examples/cannon/images/cannon.png</file>
+<file alias="images/cannon_base.png">/home/kai/Bacon2D/examples/cannon/images/cannon_base.png</file>
+<file alias="images/wall.jpg">/home/kai/Bacon2D/examples/cannon/images/wall.jpg</file>
+<file alias="sounds/cannon.wav">/home/kai/Bacon2D/examples/cannon/sounds/cannon.wav</file>
+<file alias="sounds/gear.wav">/home/kai/Bacon2D/examples/cannon/sounds/gear.wav</file>
+</qresource>
+</RCC>
