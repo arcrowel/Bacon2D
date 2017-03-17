@@ -1,0 +1,6 @@
+<RCC>
+<qresource prefix="/">
+<file alias="main.qml">/home/kai/Bacon2D/examples/contacts/main.qml</file>
+<file alias="images/wheel.png">/home/kai/Bacon2D/examples/contacts/images/wheel.png</file>
+</qresource>
+</RCC>

@@ -7,6 +7,8 @@ QMAKE_HOST_ARCH=$$QMAKE_HOST.arch
 }
 
 QT += quick
+QT += qml
+QT += widgets
 
 TARGET = bacon2dplugin
 TARGETPATH = Bacon2D
@@ -68,7 +70,7 @@ SOURCES += entity.cpp \
 
 !isEmpty(QTPATH): target.path = $$QTPATH/imports/$$TARGETPATH
 else: target.path = $$[QT_INSTALL_QML]/$$replace(TARGETPATH, \\., /).$$API_VER
-;
+
 
 QMLFILES += \
             $$PWD/InfiniteScrollEntity.qml \

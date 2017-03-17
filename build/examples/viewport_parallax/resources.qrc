@@ -1,0 +1,9 @@
+<RCC>
+<qresource prefix="/">
+<file alias="main.qml">/home/kai/Bacon2D/examples/viewport_parallax/main.qml</file>
+<file alias="images/layer_01.png">/home/kai/Bacon2D/examples/viewport_parallax/images/layer_01.png</file>
+<file alias="images/layer_02.png">/home/kai/Bacon2D/examples/viewport_parallax/images/layer_02.png</file>
+<file alias="images/moving.png">/home/kai/Bacon2D/examples/viewport_parallax/images/moving.png</file>
+<file alias="images/stopped.png">/home/kai/Bacon2D/examples/viewport_parallax/images/stopped.png</file>
+</qresource>
+</RCC>
