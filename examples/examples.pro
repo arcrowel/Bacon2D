@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    tiledscene \
     behaviorchange \
     cannon \
     contacts \
