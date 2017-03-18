@@ -2,6 +2,8 @@ include(doc/doc.pri)
 
 TEMPLATE = subdirs
 
+CONFIG += c++14
+
 SUBDIRS += src \
     tests \
     examples
