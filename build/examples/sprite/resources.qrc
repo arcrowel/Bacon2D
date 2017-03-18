@@ -1,7 +1,7 @@
 <RCC>
 <qresource prefix="/">
-<file alias="main.qml">/home/kai/Bacon2D/examples/sprite/main.qml</file>
-<file alias="jumping.png">/home/kai/Bacon2D/examples/sprite/jumping.png</file>
-<file alias="sliding.png">/home/kai/Bacon2D/examples/sprite/sliding.png</file>
+<file alias="main.qml">/home/kai/Git/Bacon2D/examples/sprite/main.qml</file>
+<file alias="jumping.png">/home/kai/Git/Bacon2D/examples/sprite/jumping.png</file>
+<file alias="sliding.png">/home/kai/Git/Bacon2D/examples/sprite/sliding.png</file>
 </qresource>
 </RCC>

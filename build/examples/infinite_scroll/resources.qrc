@@ -1,7 +1,7 @@
 <RCC>
 <qresource prefix="/">
-<file alias="main.qml">/home/kai/Bacon2D/examples/infinite_scroll/main.qml</file>
-<file alias="astronaut.png">/home/kai/Bacon2D/examples/infinite_scroll/astronaut.png</file>
-<file alias="sky.png">/home/kai/Bacon2D/examples/infinite_scroll/sky.png</file>
+<file alias="main.qml">/home/kai/Git/Bacon2D/examples/infinite_scroll/main.qml</file>
+<file alias="astronaut.png">/home/kai/Git/Bacon2D/examples/infinite_scroll/astronaut.png</file>
+<file alias="sky.png">/home/kai/Git/Bacon2D/examples/infinite_scroll/sky.png</file>
 </qresource>
 </RCC>
