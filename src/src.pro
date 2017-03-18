@@ -47,7 +47,10 @@ HEADERS += entity.h \
            scrollbehaviorimpl.h \
            imagelayerscrollbehavior.h \
            layerscrollbehavior.h \
-           settings.h
+           settings.h \
+           tiledscene.h \
+           tiledlayer.h \
+           tiledobject.h
 
 SOURCES += entity.cpp \
            enums.cpp \
@@ -66,7 +69,10 @@ SOURCES += entity.cpp \
            scrollbehavior.cpp \
            imagelayerscrollbehavior.cpp \
            layerscrollbehavior.cpp \
-           settings.cpp
+           settings.cpp \
+           tiledscene.cpp \
+           tiledlayer.cpp \
+           tiledobject.cpp
 
 !isEmpty(QTPATH): target.path = $$QTPATH/imports/$$TARGETPATH
 else: target.path = $$[QT_INSTALL_QML]/$$replace(TARGETPATH, \\., /).$$API_VER
