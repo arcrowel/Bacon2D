@@ -5,7 +5,7 @@
 #include "tmxcell.h"
 #include "tmxtile.h"
 
-#include <../3rdparty/tiled/src/libtiled/tilelayer.h>
+#include <libtiled/tilelayer.h>
 #include <QDebug>
 
 class TMXCell : public QObject

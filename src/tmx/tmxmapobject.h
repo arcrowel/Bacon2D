@@ -4,7 +4,7 @@
 #include "tmxobject.h"
 #include "tmxcell.h"
 
-#include <../3rdparty/tiled/src/libtiled/mapobject.h>
+#include <libtiled/mapobject.h>
 #include <QVariant>
 
 class TMXMapObject : public TMXObject

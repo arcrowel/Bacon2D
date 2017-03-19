@@ -4,8 +4,8 @@
 #include "tmxmapobject.h"
 #include "tmxlayer.h"
 
-#include <../3rdparty/tiled/src/libtiled/objectgroup.h>
-#include <../3rdparty/tiled/src/libtiled/mapobject.h>
+#include <libtiled/objectgroup.h>
+#include <libtiled/mapobject.h>
 
 #include <QtCore/QObject>
 

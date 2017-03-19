@@ -4,7 +4,7 @@
 #include "tmxlayer.h"
 #include <QPixmap>
 
-#include <../3rdparty/tiled/src/libtiled/imagelayer.h>
+#include <libtiled/imagelayer.h>
 
 class TMXImageLayer : public TMXLayer
 {

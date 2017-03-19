@@ -3,7 +3,7 @@
 
 #include "tmxobject.h"
 
-#include <../3rdparty/tiled/src/libtiled/layer.h>
+#include <libtiled/layer.h>
 
 class TMXMap;
 class TMXObjectLayer;

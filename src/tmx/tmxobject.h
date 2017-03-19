@@ -1,8 +1,8 @@
 #ifndef TMXOBJECT_H
 #define TMXOBJECT_H
 
-#include <../3rdparty/tiled/src/libtiled/object.h>
-#include <../3rdparty/tiled/src/libtiled/properties.h>
+#include <libtiled/object.h>
+#include <libtiled/properties.h>
 
 #include <QtCore/QMap>
 #include <QtCore/QObject>

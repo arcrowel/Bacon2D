@@ -4,7 +4,7 @@
 #include "tmxlayer.h"
 #include "tmxmapobject.h"
 
-#include <../3rdparty/tiled/src/libtiled/objectgroup.h>
+#include <libtiled/objectgroup.h>
 
 class TMXObjectLayer : public TMXLayer
 {

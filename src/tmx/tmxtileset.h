@@ -4,7 +4,7 @@
 #include "tmxobject.h"
 #include "tmxtile.h"
 
-#include <../3rdparty/tiled/src/libtiled/tileset.h>
+#include <libtiled/tileset.h>
 
 class TMXMap;
 

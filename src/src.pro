@@ -22,6 +22,7 @@ MOC_DIR = tmp
 DEPENDPATH += .
 INCLUDEPATH += .
 INCLUDEPATH += ../3rdparty/qml-box2d/
+INCLUDEPATH += ../3rdparty/tiled/src
 
 DEFINES += STATIC_PLUGIN_BOX2D
 include(../3rdparty/qml-box2d/box2d-static.pri)

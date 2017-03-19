@@ -9,8 +9,8 @@
 #include "tmxobjectgroup.h"
 #include "tmxtileset.h"
 
-#include <../3rdparty/tiled/src/libtiled/map.h>
-#include <../3rdparty/tiled/src/libtiled/objectgroup.h>
+#include <libtiled/map.h>
+#include <libtiled/objectgroup.h>
 
 class TMXMap : public TMXObject
 {

@@ -4,8 +4,8 @@
 #include "tmxlayer.h"
 #include "tmxcell.h"
 
-#include <../3rdparty/tiled/src/libtiled/tilelayer.h>
-#include <../3rdparty/tiled/src/libtiled/map.h>
+#include <libtiled/tilelayer.h>
+#include <libtiled/map.h>
 
 class TMXLayer;
 
