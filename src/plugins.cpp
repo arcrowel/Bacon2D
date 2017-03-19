@@ -68,7 +68,7 @@ void Plugins::registerTypes(const char *uri)
 {
     Q_UNUSED(uri)
 
-    qmlRegisterType<Layer>("Bacon2D", 1, 0, "Layer");
+    qmlRegisterType<Bacon2DLayer>("Bacon2D", 1, 0, "Layer");
     qmlRegisterUncreatableType<Behavior>("Bacon2D", 1, 0, "Bacon2DBehavior", "Don't use Bacon2DBehavior directly, use one specialized behavior");
     qmlRegisterUncreatableType<Bacon2D>("Bacon2D", 1, 0, "Bacon2D", "Not creatable as an object, use only to access enums");
 
@@ -77,7 +77,7 @@ void Plugins::registerTypes(const char *uri)
     qmlRegisterType<Entity>("Bacon2D", 1, 0, "Entity");
     qmlRegisterType<Sprite>("Bacon2D", 1, 0, "Sprite");
     qmlRegisterType<SpriteAnimation>("Bacon2D", 1, 0, "SpriteAnimation");
-    qmlRegisterType<ImageLayer>("Bacon2D", 1, 0, "ImageLayer");
+    qmlRegisterType<Bacon2DImageLayer>("Bacon2D", 1, 0, "ImageLayer");
     qmlRegisterType<Viewport>("Bacon2D", 1, 0, "Viewport");
     qmlRegisterType<ScriptBehavior>("Bacon2D", 1, 0, "ScriptBehavior");
     qmlRegisterType<Settings>("Bacon2D", 1, 0, "Settings");
