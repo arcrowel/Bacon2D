@@ -1,9 +1,0 @@
-<RCC>
-<qresource prefix="/">
-<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/scene_transition/main.qml</file>
-<file alias="images/layer_01.png">/home/kai/Desktop/Bacon2D/examples/scene_transition/images/layer_01.png</file>
-<file alias="images/layer_02.png">/home/kai/Desktop/Bacon2D/examples/scene_transition/images/layer_02.png</file>
-<file alias="images/moving.png">/home/kai/Desktop/Bacon2D/examples/scene_transition/images/moving.png</file>
-<file alias="images/stopped.png">/home/kai/Desktop/Bacon2D/examples/scene_transition/images/stopped.png</file>
-</qresource>
-</RCC>

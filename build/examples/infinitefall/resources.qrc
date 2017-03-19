@@ -1,7 +1,0 @@
-<RCC>
-<qresource prefix="/">
-<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/infinitefall/main.qml</file>
-<file alias="astronaut.png">/home/kai/Desktop/Bacon2D/examples/infinitefall/astronaut.png</file>
-<file alias="sky.png">/home/kai/Desktop/Bacon2D/examples/infinitefall/sky.png</file>
-</qresource>
-</RCC>

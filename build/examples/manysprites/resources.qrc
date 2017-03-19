@@ -1,6 +1,0 @@
-<RCC>
-<qresource prefix="/">
-<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/manysprites/main.qml</file>
-<file alias="explosion.png">/home/kai/Desktop/Bacon2D/examples/manysprites/explosion.png</file>
-</qresource>
-</RCC>

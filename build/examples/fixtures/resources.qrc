@@ -1,6 +1,0 @@
-<RCC>
-<qresource prefix="/">
-<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/fixtures/main.qml</file>
-<file alias="images/wall.jpg">/home/kai/Desktop/Bacon2D/examples/fixtures/images/wall.jpg</file>
-</qresource>
-</RCC>

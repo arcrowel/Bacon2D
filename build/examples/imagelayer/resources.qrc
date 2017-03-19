@@ -1,7 +1,0 @@
-<RCC>
-<qresource prefix="/">
-<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/imagelayer/main.qml</file>
-<file alias="sliding.png">/home/kai/Desktop/Bacon2D/examples/imagelayer/sliding.png</file>
-<file alias="large_enough.png">/home/kai/Desktop/Bacon2D/examples/imagelayer/large_enough.png</file>
-</qresource>
-</RCC>
