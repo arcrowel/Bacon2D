@@ -60,6 +60,10 @@
 #include "box2dcontact.h"
 #include "scrollbehavior.h"
 
+#include "tiledscene.h"
+#include "tiledlayer.h"
+#include "tiledobject.h"
+
 void Plugins::registerTypes(const char *uri)
 {
     Q_UNUSED(uri)
@@ -78,6 +82,15 @@ void Plugins::registerTypes(const char *uri)
     qmlRegisterType<ScriptBehavior>("Bacon2D", 1, 0, "ScriptBehavior");
     qmlRegisterType<Settings>("Bacon2D", 1, 0, "Settings");
     qmlRegisterType<ScrollBehavior>("Bacon2D", 1, 0, "ScrollBehavior");
+
+
+
+    // For TiledScene
+    qmlRegisterType<TiledScene>("Bacon2D", 1, 0, "TiledScene");
+    qmlRegisterType<TiledLayer>("Bacon2D", 1, 0, "TiledLayer");
+    qmlRegisterType<TiledObject>("Bacon2D", 1, 0, "TiledObject");
+    qmlRegisterType<CollisionItem>("Bacon2D", 1, 0, "CollisionItem");
+
 
     qmlRegisterUncreatableType<Box2DWorld>("Bacon2D", 1, 0, "World",
                                            QStringLiteral("World created by Scene if physics is enabled"));

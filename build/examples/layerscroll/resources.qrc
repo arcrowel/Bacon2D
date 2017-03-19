@@ -1,0 +1,7 @@
+<RCC>
+<qresource prefix="/">
+<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/layerscroll/main.qml</file>
+<file alias="astronaut.png">/home/kai/Desktop/Bacon2D/examples/layerscroll/astronaut.png</file>
+<file alias="sky.png">/home/kai/Desktop/Bacon2D/examples/layerscroll/sky.png</file>
+</qresource>
+</RCC>

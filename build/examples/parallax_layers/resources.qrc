@@ -1,0 +1,10 @@
+<RCC>
+<qresource prefix="/">
+<file alias="main.qml">/home/kai/Desktop/Bacon2D/examples/parallax_layers/main.qml</file>
+<file alias="images/moon.png">/home/kai/Desktop/Bacon2D/examples/parallax_layers/images/moon.png</file>
+<file alias="images/planet.png">/home/kai/Desktop/Bacon2D/examples/parallax_layers/images/planet.png</file>
+<file alias="images/rocketship.png">/home/kai/Desktop/Bacon2D/examples/parallax_layers/images/rocketship.png</file>
+<file alias="images/space.png">/home/kai/Desktop/Bacon2D/examples/parallax_layers/images/space.png</file>
+<file alias="images/stars.png">/home/kai/Desktop/Bacon2D/examples/parallax_layers/images/stars.png</file>
+</qresource>
+</RCC>

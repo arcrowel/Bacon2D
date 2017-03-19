@@ -6,13 +6,15 @@ QMAKE_HOST_ARCH=$$QMAKE_HOST.arch
      CONFIG += cross_build
 }
 
+CONFIG += c++11
+
 QT += quick
 
 TARGET = bacon2dplugin
 TARGETPATH = Bacon2D
 
 API_VER=1.0
-DESTDIR = $$OUT_PWD/imports/Bacon2D/
+DESTDIR = $$OUT_PWD/qml/Bacon2D
 
 OBJECTS_DIR = tmp
 MOC_DIR = tmp
@@ -20,9 +22,14 @@ MOC_DIR = tmp
 DEPENDPATH += .
 INCLUDEPATH += .
 INCLUDEPATH += ../3rdparty/qml-box2d/
+INCLUDEPATH += ../3rdparty/tiled/src/
 
 DEFINES += STATIC_PLUGIN_BOX2D
 include(../3rdparty/qml-box2d/box2d-static.pri)
+
+INCLUDEPATH += $$PWD/../3rdparty
+include(../3rdparty/libtiled/libtiled.pri)
+include($$PWD/tmx/tmx.pri)
 
 win32:DEFINES += WIN32
 
@@ -45,7 +52,10 @@ HEADERS += entity.h \
            scrollbehaviorimpl.h \
            imagelayerscrollbehavior.h \
            layerscrollbehavior.h \
-           settings.h
+           settings.h \
+           tiledobject.h \
+           tiledlayer.h \
+           tiledscene.h \
 
 SOURCES += entity.cpp \
            enums.cpp \
@@ -64,9 +74,12 @@ SOURCES += entity.cpp \
            scrollbehavior.cpp \
            imagelayerscrollbehavior.cpp \
            layerscrollbehavior.cpp \
-           settings.cpp
+           settings.cpp \
+           tiledscene.cpp \
+           tiledlayer.cpp \
+           tiledobject.cpp
 
-!isEmpty(QTPATH): target.path = $$QTPATH/imports/$$TARGETPATH
+!isEmpty(QTPATH): target.path = $$QTPATH/qml/$$TARGETPATH
 else: target.path = $$[QT_INSTALL_QML]/$$replace(TARGETPATH, \\., /).$$API_VER
 ;
 
@@ -90,12 +103,12 @@ win32 {
     for(FILE, QMLFILES){
         QMAKE_POST_LINK += $$QMAKE_COPY $$quote($$FILE) $$quote($$DESTDIR) $$escape_expand(\\n\\t)
     }
-    QMAKE_POST_LINK += $$[QT_HOST_BINS]\qmlplugindump -noinstantiate -notrelocatable Bacon2D $$API_VER $$OUT_PWD\imports  > $$DESTDIR\plugins.qmltypes
+    QMAKE_POST_LINK += $$[QT_INSTALL_BINS]/qmlplugindump -noinstantiate -notrelocatable Bacon2D $$API_VER $$OUT_PWD/qml  > $$DESTDIR\plugins.qmltypes
 }
 unix {
     QMAKE_POST_LINK += $$QMAKE_COPY $$QMLFILES $$DESTDIR $$escape_expand(\\n\\t)
     !cross_build {
-        QMAKE_POST_LINK += $$[QT_HOST_BINS]/qmlplugindump -noinstantiate -notrelocatable Bacon2D $$API_VER $$OUT_PWD/imports  > $$DESTDIR/plugins.qmltypes
+        QMAKE_POST_LINK += $$[QT_INSTALL_BINS]/qmlplugindump -noinstantiate -notrelocatable Bacon2D $$API_VER $$OUT_PWD/qml  > $$DESTDIR/plugins.qmltypes
     }
 }
 
