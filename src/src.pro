@@ -43,8 +43,8 @@ HEADERS += entity.h \
            spriteanimation.h \
            animationtransition.h \
            animationchangeevent.h \
-           layer.h \
-           imagelayer.h \
+           bacon2dlayer.h \
+           bacon2dimagelayer.h \
            viewport.h \
            behavior.h \
            scriptbehavior.h \
@@ -66,8 +66,8 @@ SOURCES += entity.cpp \
            sprite.cpp \
            spriteanimation.cpp \
            animationtransition.cpp \
-           layer.cpp \
-           imagelayer.cpp \
+           bacon2dlayer.cpp \
+           bacon2dimagelayer.cpp \
            viewport.cpp \
            behavior.cpp \
            scriptbehavior.cpp \
