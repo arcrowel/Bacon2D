@@ -35,7 +35,7 @@ public:
 
     QList<TMXLayer> layers() const {
         QList<TMXLayer> allLayers;
-        foreach(Tiled::Layer *layer, m_tiledMap->layers())
+        foreach(Tiled::TiledLayer *layer, m_tiledMap->layers())
             allLayers.append(TMXLayer(layer));
 
         return allLayers;

@@ -3,7 +3,7 @@
 
 #include "tmxobject.h"
 
-#include <libtiled/layer.h>
+#include <libtiled/tiled_layer.h>
 
 class TMXMap;
 class TMXObjectLayer;
@@ -15,15 +15,15 @@ class TMXLayer : public TMXObject
     Q_OBJECT
 
 public:
-    explicit TMXLayer(Tiled::Layer *layer, QObject *parent = 0)
+    explicit TMXLayer(Tiled::TiledLayer *layer, QObject *parent = 0)
         : TMXObject(layer, parent), m_layer(layer) {}
 
     TMXLayer &operator=(const TMXLayer &other) { setLayer(other.layer()); return *this; }
 
     bool isNull() const { return m_layer == nullptr; }
 
-    Tiled::Layer *layer() const { return  m_layer; }
-    void setLayer(Tiled::Layer *layer) { m_layer = layer; }
+    Tiled::TiledLayer *layer() const { return  m_layer; }
+    void setLayer(Tiled::TiledLayer *layer) { m_layer = layer; }
 
     QString name() const { return m_layer->name(); }
     void setName(const QString &name) { m_layer->setName(name); }
@@ -61,7 +61,7 @@ public:
 
     QPoint positionAt(const QPoint &pos) const { return pos; }
 private:
-    Tiled::Layer *m_layer;
+    Tiled::TiledLayer *m_layer;
     TMXMap *m_map;
 };
 
