@@ -33,7 +33,7 @@
 #include "scene.h"
 #include "spriteanimation.h"
 #include "sprite.h"
-#include "imagelayer.h"
+#include "bacon2dimagelayer.h"
 #include "game.h"
 #include "viewport.h"
 #include "behavior.h"

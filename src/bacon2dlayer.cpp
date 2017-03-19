@@ -26,7 +26,7 @@
  * @author Roger Felipe Zanoni da Silva <roger.zanoni@openbossa.org>
  */
 
-#include "layer.h"
+#include "bacon2dlayer.h"
 
 #include <QtQml/QQmlProperty>
 

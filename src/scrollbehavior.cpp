@@ -28,8 +28,8 @@
 
 #include <QtQml/QQmlExpression>
 
-#include "layer.h"
-#include "imagelayer.h"
+#include "bacon2dlayer.h"
+#include "bacon2dimagelayer.h"
 #include "layerscrollbehavior.h"
 #include "imagelayerscrollbehavior.h"
 

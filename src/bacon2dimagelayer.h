@@ -29,7 +29,7 @@
 #ifndef _IMAGELAYER_H_
 #define _IMAGELAYER_H_
 
-#include "layer.h"
+#include "bacon2dlayer.h"
 
 #include <QSGTexture>
 #include <QQuickWindow>

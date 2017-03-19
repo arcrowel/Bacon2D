@@ -12,12 +12,10 @@ class TMXCell : public QObject
 {
     Q_OBJECT
 public:
-    explicit TMXCell(const Tiled::Cell &cell, QObject *parent = 0)
-        : QObject(parent), m_cell(cell.tile)
-    {
-        m_cell.flippedAntiDiagonally = cell.flippedAntiDiagonally;
-        m_cell.flippedHorizontally = cell.flippedHorizontally;
-        m_cell.flippedVertically = cell.flippedVertically;
+    explicit TMXCell(const Tiled::Cell &cell, QObject *parent = 0)   : QObject(parent), m_cell(cell.tile()){
+        m_cell.setFlippedAntiDiagonally(cell.flippedAntiDiagonally());
+        m_cell.setFlippedHorizontally(cell.flippedHorizontally());
+        m_cell.setFlippedVertically(cell.flippedVertically());
     }
     TMXCell(const TMXCell &other) { setCell(other.cell()); }
     TMXCell &operator=(const TMXCell &other) { setCell(other.cell()); return *this; }
@@ -26,11 +24,12 @@ public:
     void setCell(const Tiled::Cell &cell) { m_cell = cell; }
 
     bool isEmpty() const { return m_cell.isEmpty(); }
-    bool flippedHorizontally() const { return m_cell.flippedHorizontally; }
-    bool flippedVertically() const { return m_cell.flippedVertically; }
-    bool flippedAntiDiagonally() const { return m_cell.flippedAntiDiagonally; }
+    
+    bool flippedHorizontally() const { return m_cell.flippedHorizontally(); }
+    bool flippedVertically() const { return m_cell.flippedVertically(); }
+    bool flippedAntiDiagonally() const { return m_cell.flippedAntiDiagonally(); }
 
-    TMXTile tile() const { return TMXTile(m_cell.tile); }
+    TMXTile tile() const { return TMXTile(m_cell.tile()); }
 private:
     Tiled::Cell m_cell;
 };

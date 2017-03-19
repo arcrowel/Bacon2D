@@ -29,7 +29,7 @@
 #include "scene.h"
 
 #include "game.h"
-#include "layer.h"
+#include "bacon2dlayer.h"
 #include "viewport.h"
 
 #include <QtCore/QtGlobal>

@@ -25,7 +25,7 @@
 
 #include "imagelayerscrollbehavior.h"
 
-#include "imagelayer.h"
+#include "bacon2dimagelayer.h"
 
 ImageLayerScrollBehavior::ImageLayerScrollBehavior(QObject *parent)
     : ScrollBehaviorImpl(parent)

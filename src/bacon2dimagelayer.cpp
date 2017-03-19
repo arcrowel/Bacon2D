@@ -26,7 +26,7 @@
  * @author Roger Felipe Zanoni da Silva <roger.zanoni@openbossa.org>
  */
 
-#include "imagelayer.h"
+#include "bacon2dimagelayer.h"
 
 #include <QImage>
 #include <QPainter>
@@ -183,8 +183,8 @@ qreal ImageLayerNode::imageHeight() const
   An ImageLayer can be used to create parallax effects like an infinite 
   scrolling background useful in creating side-scrolling games.
 */
-Bacon2DImageLayer::Bacon2DImageLayer(Layer *parent)
-    : Layer((QQuickItem *)parent)
+Bacon2DImageLayer::Bacon2DImageLayer(Bacon2DLayer *parent)
+    : Bacon2DLayer((QQuickItem *)parent)
     , m_imageWidth(0)
     , m_imageHeight(0)
     , m_geometryChanged(false)
@@ -235,7 +235,7 @@ QSGNode *Bacon2DImageLayer::updatePaintNode(QSGNode *oldNode, UpdatePaintNodeDat
             localFile = m_source.toLocalFile();
 
         n = new ImageLayerNode(window(), localFile,
-                (m_type == Layer::Mirrored) ? true : false);
+                (m_type == Bacon2DLayer::Mirrored) ? true : false);
 
         m_imageWidth = n->imageWidth();
         m_imageHeight = n->imageHeight();
@@ -262,7 +262,7 @@ QSGNode *Bacon2DImageLayer::updatePaintNode(QSGNode *oldNode, UpdatePaintNodeDat
 
 void Bacon2DImageLayer::geometryChanged(const QRectF &newGeometry, const QRectF &oldGeometry)
 {
-    Layer::geometryChanged(newGeometry, oldGeometry);
+    Bacon2DLayer::geometryChanged(newGeometry, oldGeometry);
     if (newGeometry.isEmpty() || !isComponentComplete())
         return;
 
@@ -273,7 +273,7 @@ void Bacon2DImageLayer::geometryChanged(const QRectF &newGeometry, const QRectF 
 
 void Bacon2DImageLayer::componentComplete()
 {
-    Layer::componentComplete();
+    Bacon2DLayer::componentComplete();
 }
 
 void Bacon2DImageLayer::setContentGeometry(const QRectF &geometry)
@@ -284,7 +284,7 @@ void Bacon2DImageLayer::setContentGeometry(const QRectF &geometry)
 
 void Bacon2DImageLayer::update(const int &delta)
 {
-    Layer::update(delta);
+    Bacon2DLayer::update(delta);
     QQuickItem::update();
 }
 
