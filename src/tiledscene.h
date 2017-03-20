@@ -19,8 +19,8 @@
  * @author Roger Felipe Zanoni da Silva <roger.zanoni@openbossa.org>
  */
 
-#ifndef TILEDSCENE_H
-#define TILEDSCENE_H
+#ifndef _TILEDSCENE_H_
+#define _TILEDSCENE_H_
 
 #include "game.h"
 #include "scene.h"
@@ -72,5 +72,6 @@ private:
     // NOTE: Object layers are loaded by the TiledLayer and TiledObject classes.
 };
 
-#endif
+
+#endif // _TILEDSCENE_H_
 

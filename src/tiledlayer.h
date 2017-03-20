@@ -1,5 +1,5 @@
-#ifndef TILEDLAYER_H
-#define TILEDLAYER_H
+#ifndef _TILEDLAYER_H_
+#define _TILEDLAYER_H_
 
 #include <QQuickItem>
 #include "box2dfixture.h"
@@ -45,5 +45,4 @@ private:
     void setLayer(TMXLayer *layer);
 };
 
-#endif // TILEDLAYER_H
-
+#endif // _TILEDLAYER_H_

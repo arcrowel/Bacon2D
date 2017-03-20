@@ -27,8 +27,8 @@ INCLUDEPATH += ../3rdparty/tiled/src/
 DEFINES += STATIC_PLUGIN_BOX2D
 include(../3rdparty/qml-box2d/box2d-static.pri)
 
-INCLUDEPATH += $$PWD/../3rdparty
-include(../3rdparty/libtiled/libtiled.pri)
+
+include(../3rdparty/tiled/src/libtiled/libtiled-static.pri)
 include($$PWD/tmx/tmx.pri)
 
 win32:DEFINES += WIN32

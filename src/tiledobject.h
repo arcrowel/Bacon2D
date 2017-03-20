@@ -1,5 +1,5 @@
-#ifndef TILEDOBJECT_H
-#define TILEDOBJECT_H
+#ifndef _TILEDOBJECT_H_
+#define _TILEDOBJECT_H_
 
 #include <QQuickItem>
 #include "tmxmapobject.h"
@@ -118,5 +118,5 @@ private:
     int m_collisionIndex;
 };
 
-#endif // TILEDOBJECT_H
+#endif // _TILEDOBJECT_H_
 
