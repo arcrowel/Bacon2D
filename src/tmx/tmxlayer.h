@@ -47,13 +47,13 @@ public:
     void setPosition(QPoint pos) { m_layer->setPosition(pos); }
     void setPosition(int x, int y) { m_layer->setPosition(x, y); }
 
-    int width() const { return m_layer->width(); }
-    int height() const { return m_layer->height(); }
+    int width() const { return lWidth; }
+    int height() const { return lHeight; }
 
-    QRect bounds() const { return m_layer->bounds(); }
+    QRect bounds() const { return QRect(m_layer->x(), m_layer->y(), lWidth, lHeight); }
 
-    QSize size() const { return m_layer->size(); }
-    void setSize(const QSize &size) { m_layer->setSize(size); }
+    QSize size() const { return QSize(lWidth, lHeight); }
+    void setSize(const QSize &size) { lWidth = size.width(); lHeight = size.height(); }
 
     bool isTileLayer() const { return m_layer->isTileLayer(); }
     bool isImageLayer() const { return m_layer->isImageLayer(); }
@@ -63,6 +63,8 @@ public:
 private:
     Tiled::Layer *m_layer;
     TMXMap *m_map;
+    int lWidth;
+    int lHeight;
 };
 
 #endif // TMXLAYER_H
