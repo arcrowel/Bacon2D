@@ -20,7 +20,6 @@ SUBDIRS += \
     sprite \
     viewport_parallax \
     weld \
-    tests \
     tiledscene
 
 OTHER_FILES += \
