@@ -29,6 +29,7 @@ include(../3rdparty/qml-box2d/box2d-static.pri)
 
 
 include(../3rdparty/tiled/src/libtiled/libtiled-static.pri)
+include(../3rdparty/tiled/src/libtiled/libtiled-src.pri)
 include($$PWD/tmx/tmx.pri)
 
 win32:DEFINES += WIN32
